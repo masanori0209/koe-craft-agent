@@ -1,0 +1,349 @@
+{
+  "version": "1.21.4",
+  "generated_at": "2026-06-18T13:46:31.548Z",
+  "recipe_count": 18,
+  "recipes": [
+    {
+      "recipe_id": "minecraft:bolt_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:bolt_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:coast_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:coast_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:dune_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:dune_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:eye_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:eye_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:flow_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:flow_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:host_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:host_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:raiser_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:raiser_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:rib_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:rib_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:sentry_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:sentry_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:shaper_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:shaper_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:silence_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:silence_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:snout_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:snout_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:spire_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:spire_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:tide_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:tide_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:vex_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:vex_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:ward_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:ward_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:wayfinder_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:wayfinder_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:wild_armor_trim_smithing_template_smithing_trim",
+      "type": "minecraft:smithing_trim",
+      "template": [
+        {
+          "item": "minecraft:wild_armor_trim_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "tag": "minecraft:trimmable_armor"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:trim_materials"
+        }
+      ]
+    }
+  ]
+}

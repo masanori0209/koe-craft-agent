@@ -1,0 +1,6 @@
+{
+  "category.koecraft_agent": "KoeCraft Agent",
+  "key.koecraft_agent.toggle_voice": "Toggle Voice Mic",
+  "key.koecraft_agent.mute_voice": "Mute / Unmute Voice Mic",
+  "key.koecraft_agent.stop_voice": "Stop Voice Mic"
+}

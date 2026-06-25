@@ -1,0 +1,12 @@
+{
+  "recognized_text": "やったーいえーい",
+  "state": {
+    "inventory": {},
+    "nearby": {}
+  },
+  "expected": {
+    "route": "celebrate_route",
+    "tasks": ["celebrate"],
+    "actions": [{ "type": "celebrate" }]
+  }
+}

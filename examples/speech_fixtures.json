@@ -1,0 +1,843 @@
+[
+  {
+    "id": "place_torch_basic",
+    "recognized_text": "暗いから松明置いて",
+    "expected_goal": {
+      "type": "place_light",
+      "target_item": "minecraft:torch"
+    }
+  },
+  {
+    "id": "self_correction_pickaxe",
+    "recognized_text": "松明置いて、いや、先に石のピッケル作って",
+    "expected_features": {
+      "has_self_correction": true,
+      "cancelled_goal": "place_torch",
+      "active_goal": "craft_stone_pickaxe"
+    }
+  },
+  {
+    "id": "craft_stone_pickaxe_plain_suru",
+    "recognized_text": "石のツルハシ作る",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:stone_pickaxe"
+    }
+  },
+  {
+    "id": "craft_iron_pickaxe_material_specific",
+    "recognized_text": "鉄のツルハシ作りたい",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:iron_pickaxe"
+    }
+  },
+  {
+    "id": "interrupt",
+    "recognized_text": "待って、やっぱやめて",
+    "expected_features": {
+      "is_interrupt": true
+    },
+    "expected_goal": {
+      "type": "abort"
+    }
+  },
+  {
+    "id": "amivoice_dictionary_without_custom_term",
+    "recognized_text": "暗いからたいまつおいて",
+    "expected_goal": {
+      "type": "place_light",
+      "target_item": "minecraft:torch"
+    },
+    "dictionary_enabled": false
+  },
+  {
+    "id": "amivoice_dictionary_with_custom_term",
+    "recognized_text": "暗いから松明置いて",
+    "expected_goal": {
+      "type": "place_light",
+      "target_item": "minecraft:torch"
+    },
+    "dictionary_enabled": true
+  },
+  {
+    "id": "vague_light_reference",
+    "recognized_text": "あれあのあかりつけるやつ置いて",
+    "expected_goal": {
+      "type": "place_light",
+      "target_item": "minecraft:torch"
+    }
+  },
+  {
+    "id": "collect_dirt_rule_based",
+    "recognized_text": "土を掘りたい",
+    "expected_goal": {
+      "type": "collect_block",
+      "block_group": "dirt"
+    }
+  },
+  {
+    "id": "collect_coal_ore_rule_based",
+    "recognized_text": "石炭鉱石を掘って",
+    "expected_goal": {
+      "type": "collect_block",
+      "block_group": "coal_ore"
+    }
+  },
+  {
+    "id": "village_search_explore",
+    "recognized_text": "村を探したい",
+    "expected_goal": {
+      "type": "search_structure",
+      "target_group": "village_hint"
+    }
+  },
+  {
+    "id": "structure_search_explore",
+    "recognized_text": "構造物を探して",
+    "expected_goal": {
+      "type": "search_structure",
+      "target_group": "structure_hint"
+    }
+  },
+  {
+    "id": "celebrate_reaction_youtuber_pose",
+    "recognized_text": "おおーすごい",
+    "expected_goal": {
+      "type": "celebrate",
+      "style": "youtuber_pose"
+    }
+  },
+  {
+    "id": "celebrate_reaction_dance",
+    "recognized_text": "やったーいえーい",
+    "expected_goal": {
+      "type": "celebrate",
+      "style": "dance"
+    }
+  },
+  {
+    "id": "prepare_nether_bucket_portal",
+    "recognized_text": "ネザーに行きたい",
+    "expected_goal": {
+      "type": "prepare_nether",
+      "route": "bucket_portal"
+    }
+  },
+  {
+    "id": "ender_dragon_goal_starts_with_nether",
+    "recognized_text": "エンドラ討伐したい",
+    "expected_goal": {
+      "type": "prepare_nether",
+      "route": "bucket_portal"
+    }
+  },
+  {
+    "id": "get_food_hungry",
+    "recognized_text": "お腹すいたから食べ物ほしい",
+    "expected_goal": {
+      "type": "get_food"
+    }
+  },
+  {
+    "id": "craft_boat_generic",
+    "recognized_text": "ボート作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:boat"
+    }
+  },
+  {
+    "id": "craft_shield",
+    "recognized_text": "盾を作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:shield"
+    }
+  },
+  {
+    "id": "craft_torch_not_place",
+    "recognized_text": "松明作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:torch"
+    }
+  },
+  {
+    "id": "craft_generic_sword",
+    "recognized_text": "剣を作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:sword"
+    }
+  },
+  {
+    "id": "craft_generic_bed",
+    "recognized_text": "ベッド作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:bed"
+    }
+  },
+  {
+    "id": "craft_generic_stone_stairs",
+    "recognized_text": "石の階段を作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:stone_stairs_family"
+    }
+  },
+  {
+    "id": "conversation_dark_make_it_bright",
+    "recognized_text": "暗くて見えないから明るくして",
+    "expected_goal": {
+      "type": "place_light",
+      "target_item": "minecraft:torch"
+    }
+  },
+  {
+    "id": "conversation_stop_now",
+    "recognized_text": "待ってストップ",
+    "expected_features": {
+      "is_interrupt": true
+    },
+    "expected_goal": {
+      "type": "abort"
+    }
+  },
+  {
+    "id": "conversation_open_door",
+    "recognized_text": "ドア開けて",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "open"
+    }
+  },
+  {
+    "id": "conversation_harvest_crops",
+    "recognized_text": "成熟した作物だけ収穫して",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "harvest"
+    }
+  },
+  {
+    "id": "conversation_defend_close_enemy",
+    "recognized_text": "敵が近いから盾構えて守って",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "defend"
+    }
+  },
+  {
+    "id": "conversation_attack_zombie",
+    "recognized_text": "ゾンビ倒して",
+    "expected_goal": {
+      "type": "attack_entity",
+      "entity_group": "hostile"
+    }
+  },
+  {
+    "id": "conversation_hunt_cow",
+    "recognized_text": "牛を狩って",
+    "expected_goal": {
+      "type": "attack_entity",
+      "entity_group": "food_animal"
+    }
+  },
+  {
+    "id": "conversation_move_right",
+    "recognized_text": "右に3ブロック歩いて",
+    "expected_goal": {
+      "type": "move",
+      "direction": "right",
+      "distance_blocks": 3
+    }
+  },
+  {
+    "id": "intervention_move_right_shift",
+    "recognized_text": "右にずれて",
+    "expected_goal": {
+      "type": "move",
+      "direction": "right"
+    }
+  },
+  {
+    "id": "conversation_move_straight_partial_asr",
+    "recognized_text": "まっすぐ",
+    "expected_goal": {
+      "type": "move",
+      "direction": "forward",
+      "distance_blocks": 12
+    }
+  },
+  {
+    "id": "conversation_move_hundred_steps",
+    "recognized_text": "100歩歩いて",
+    "expected_goal": {
+      "type": "move",
+      "direction": "forward",
+      "distance_blocks": 96
+    }
+  },
+  {
+    "id": "conversation_build_bridge",
+    "recognized_text": "橋を架けて",
+    "expected_goal": {
+      "type": "build_bridge",
+      "direction": "forward",
+      "distance_blocks": 4
+    }
+  },
+  {
+    "id": "conversation_build_bridge_asr_hash",
+    "recognized_text": "前にハッシュをかけて",
+    "expected_goal": {
+      "type": "build_bridge",
+      "direction": "forward",
+      "distance_blocks": 4
+    }
+  },
+  {
+    "id": "conversation_nether_lava_cast",
+    "recognized_text": "溶岩でネザーゲート作って",
+    "expected_goal": {
+      "type": "prepare_nether",
+      "route": "lava_cast"
+    }
+  },
+  {
+    "id": "conversation_nether_obsidian_frame",
+    "recognized_text": "黒曜石でネザーゲート作って",
+    "expected_goal": {
+      "type": "prepare_nether",
+      "route": "obsidian_frame"
+    }
+  },
+  {
+    "id": "conversation_collect_sand",
+    "recognized_text": "砂を集めて",
+    "expected_goal": {
+      "type": "collect_block",
+      "block_group": "sand"
+    }
+  },
+  {
+    "id": "light_vague_request",
+    "recognized_text": "真っ暗で見えないから照らして",
+    "expected_goal": {
+      "type": "place_light",
+      "target_item": "minecraft:torch"
+    }
+  },
+  {
+    "id": "light_plain_request",
+    "recognized_text": "明かりお願い",
+    "expected_goal": {
+      "type": "place_light",
+      "target_item": "minecraft:torch"
+    }
+  },
+  {
+    "id": "craft_crafting_table",
+    "recognized_text": "作業台作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:crafting_table"
+    }
+  },
+  {
+    "id": "intervention_place_workstation_nearby",
+    "recognized_text": "作業台を近くに置いて",
+    "expected_goal": {
+      "type": "place_workstation",
+      "station": "minecraft:crafting_table"
+    }
+  },
+  {
+    "id": "craft_sticks",
+    "recognized_text": "棒をクラフトして",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:stick"
+    }
+  },
+  {
+    "id": "craft_furnace",
+    "recognized_text": "かまど作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:furnace"
+    }
+  },
+  {
+    "id": "craft_chest",
+    "recognized_text": "チェスト用意して",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:chest"
+    }
+  },
+  {
+    "id": "craft_bucket",
+    "recognized_text": "バケツが欲しい",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:bucket"
+    }
+  },
+  {
+    "id": "craft_flint_and_steel",
+    "recognized_text": "火打石と打ち金作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:flint_and_steel"
+    }
+  },
+  {
+    "id": "craft_wooden_pickaxe",
+    "recognized_text": "木のツルハシ作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:wooden_pickaxe"
+    }
+  },
+  {
+    "id": "craft_wooden_pickaxe_asr_yesterday",
+    "recognized_text": "きのうつるはし作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:wooden_pickaxe"
+    }
+  },
+  {
+    "id": "craft_pickaxe_bare_defaults_stone",
+    "recognized_text": "ツルハシ作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:stone_pickaxe"
+    }
+  },
+  {
+    "id": "craft_pickaxe_asr_watashi_confusion",
+    "recognized_text": "私作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:stone_pickaxe"
+    }
+  },
+  {
+    "id": "craft_glass",
+    "recognized_text": "ガラス作って",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:glass"
+    }
+  },
+  {
+    "id": "collect_log_cut",
+    "recognized_text": "木を切って",
+    "expected_goal": {
+      "type": "collect_block",
+      "block_group": "log"
+    }
+  },
+  {
+    "id": "collect_logs_count",
+    "recognized_text": "原木を3個集めて",
+    "expected_goal": {
+      "type": "collect_block",
+      "block_group": "log",
+      "count": 3
+    }
+  },
+  {
+    "id": "collect_cobblestone_count",
+    "recognized_text": "丸石を3個集めて",
+    "expected_goal": {
+      "type": "collect_block",
+      "block_group": "cobblestone",
+      "count": 3
+    }
+  },
+  {
+    "id": "collect_gravel",
+    "recognized_text": "砂利を取って",
+    "expected_goal": {
+      "type": "collect_block",
+      "block_group": "gravel"
+    }
+  },
+  {
+    "id": "dig_staircase",
+    "recognized_text": "階段掘りして",
+    "expected_goal": {
+      "type": "dig_pattern",
+      "pattern": "staircase_down"
+    }
+  },
+  {
+    "id": "dig_tunnel",
+    "recognized_text": "横穴を6ブロック掘って",
+    "expected_goal": {
+      "type": "dig_pattern",
+      "pattern": "tunnel_forward",
+      "distance_blocks": 6
+    }
+  },
+  {
+    "id": "dig_shaft_safe",
+    "recognized_text": "縦掘りして",
+    "expected_goal": {
+      "type": "dig_pattern",
+      "pattern": "shaft_down_safe"
+    }
+  },
+  {
+    "id": "pickup_dropped_items",
+    "recognized_text": "落ちてるアイテム拾って",
+    "expected_goal": {
+      "type": "pickup_items"
+    }
+  },
+  {
+    "id": "pickup_drops_collect",
+    "recognized_text": "ドロップ回収して",
+    "expected_goal": {
+      "type": "pickup_items"
+    }
+  },
+  {
+    "id": "move_forward",
+    "recognized_text": "前に進んで",
+    "expected_goal": {
+      "type": "move",
+      "direction": "forward"
+    }
+  },
+  {
+    "id": "move_back",
+    "recognized_text": "後ろに2ブロック下がって",
+    "expected_goal": {
+      "type": "move",
+      "direction": "back",
+      "distance_blocks": 2
+    }
+  },
+  {
+    "id": "move_left",
+    "recognized_text": "左に移動して",
+    "expected_goal": {
+      "type": "move",
+      "direction": "left"
+    }
+  },
+  {
+    "id": "move_sprint_forward",
+    "recognized_text": "ダッシュで前に進んで",
+    "expected_goal": {
+      "type": "move",
+      "direction": "forward"
+    }
+  },
+  {
+    "id": "food_berries",
+    "recognized_text": "ベリー探して食べたい",
+    "expected_goal": {
+      "type": "get_food"
+    }
+  },
+  {
+    "id": "food_noncombat",
+    "recognized_text": "肉より先にベリーとかリンゴ欲しい",
+    "expected_goal": {
+      "type": "get_food"
+    }
+  },
+  {
+    "id": "harvest_field_crops",
+    "recognized_text": "畑の作物取って",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "harvest"
+    }
+  },
+  {
+    "id": "harvest_replant_wording",
+    "recognized_text": "収穫して植え直して",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "harvest"
+    }
+  },
+  {
+    "id": "combat_hostile_enemy",
+    "recognized_text": "敵を倒して",
+    "expected_goal": {
+      "type": "attack_entity",
+      "entity_group": "hostile"
+    }
+  },
+  {
+    "id": "combat_hunt_chicken",
+    "recognized_text": "鶏を狩って",
+    "expected_goal": {
+      "type": "attack_entity",
+      "entity_group": "food_animal"
+    }
+  },
+  {
+    "id": "combat_retreat",
+    "recognized_text": "一旦距離を取って",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "retreat"
+    }
+  },
+  {
+    "id": "combat_defend",
+    "recognized_text": "ガードして耐えて",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "defend"
+    }
+  },
+  {
+    "id": "open_fence_gate",
+    "recognized_text": "フェンスゲート開けて",
+    "expected_goal": {
+      "type": "context_action",
+      "intent": "open"
+    }
+  },
+  {
+    "id": "search_village_find",
+    "recognized_text": "村を見つけて",
+    "expected_goal": {
+      "type": "search_structure",
+      "target_group": "village_hint"
+    }
+  },
+  {
+    "id": "stop_cancel",
+    "recognized_text": "キャンセルして",
+    "expected_goal": {
+      "type": "abort"
+    }
+  },
+  {
+    "id": "unrelated_weather",
+    "recognized_text": "今日の天気どうかな",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_smalltalk",
+    "recognized_text": "最近ちょっと疲れたな",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_food_real_world",
+    "recognized_text": "ラーメン食べたい",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_work",
+    "recognized_text": "明日の会議の予定を確認して",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_browser",
+    "recognized_text": "ブラウザでニュース開いて",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_math",
+    "recognized_text": "3たす5はいくつ",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_acknowledgement",
+    "recognized_text": "なるほどね",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_music",
+    "recognized_text": "音楽かけて",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_device",
+    "recognized_text": "部屋の電気消して",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "unrelated_question",
+    "recognized_text": "これってどういう意味",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  },
+  {
+    "id": "variation_pickaxe_polite",
+    "recognized_text": "石ピッケルお願い",
+    "expected_goal": {
+      "type": "craft_item",
+      "target_item": "minecraft:stone_pickaxe"
+    }
+  },
+  {
+    "id": "variation_nearby_item_take",
+    "recognized_text": "近くのアイテム取って",
+    "expected_goal": {
+      "type": "pickup_items"
+    }
+  },
+  {
+    "id": "variation_context_mine_plain",
+    "recognized_text": "そこ掘って",
+    "expected_goal": {
+      "type": "dig_pattern",
+      "pattern": "staircase_down"
+    }
+  },
+  {
+    "id": "variation_vague_search_clarify",
+    "recognized_text": "何か探して",
+    "expected_goal": {
+      "type": "ambient_chat",
+      "message": "何を探す？村・食料・素材なら言ってね。"
+    }
+  },
+  {
+    "id": "child_make_house",
+    "recognized_text": "おうち作って",
+    "expected_goal": {
+      "type": "build_structure",
+      "style": "small_house"
+    }
+  },
+  {
+    "id": "child_secret_base",
+    "recognized_text": "秘密基地つくりたい",
+    "expected_goal": {
+      "type": "build_structure",
+      "style": "hideout"
+    }
+  },
+  {
+    "id": "child_pretty_house",
+    "recognized_text": "きれいな小さい家を作って",
+    "expected_goal": {
+      "type": "build_structure",
+      "style": "cute_house"
+    }
+  },
+  {
+    "id": "child_help_scared",
+    "recognized_text": "こわい助けて",
+    "expected_goal": {
+      "type": "build_shelter",
+      "style": "safe_spot"
+    }
+  },
+  {
+    "id": "child_confused_plan_choices",
+    "recognized_text": "わかんない",
+    "expected_goal": {
+      "type": "ambient_chat",
+      "message": "まず三つ。木を集める、家を作る、村を探す。どれにする？"
+    }
+  },
+  {
+    "id": "child_castle_too_big",
+    "recognized_text": "でっかいお城作って",
+    "expected_goal": {
+      "type": "ambient_chat",
+      "message": "まず小さい家から作る？そう言ってくれたら作るよ。"
+    }
+  },
+  {
+    "id": "child_shiny_vague",
+    "recognized_text": "キラキラしたやつ探して",
+    "expected_goal": {
+      "type": "ambient_chat",
+      "message": "光るもの？松明・鉱石・村、どれを探す？"
+    }
+  },
+  {
+    "id": "movement_swim_forward",
+    "recognized_text": "泳いで",
+    "expected_goal": {
+      "type": "move",
+      "direction": "forward",
+      "swim": true
+    }
+  },
+  {
+    "id": "movement_sprint_jump",
+    "recognized_text": "ダッシュジャンプして",
+    "expected_goal": {
+      "type": "move",
+      "direction": "forward",
+      "jump_while_sprinting": true
+    }
+  },
+  {
+    "id": "movement_hundred_steps_kana",
+    "recognized_text": "100歩あるいて",
+    "expected_goal": {
+      "type": "move",
+      "direction": "forward",
+      "distance_blocks": 96
+    }
+  },
+  {
+    "id": "pickup_take_short",
+    "recognized_text": "取って",
+    "expected_goal": {
+      "type": "pickup_items"
+    }
+  },
+  {
+    "id": "dig_short_imperative",
+    "recognized_text": "掘れ",
+    "expected_goal": {
+      "type": "dig_pattern",
+      "pattern": "staircase_down"
+    }
+  },
+  {
+    "id": "bridge_short_phrase",
+    "recognized_text": "橋かけて",
+    "expected_goal": {
+      "type": "build_bridge",
+      "direction": "forward",
+      "distance_blocks": 4
+    }
+  },
+  {
+    "id": "ambient_filler_sigh_ignored",
+    "recognized_text": "はあ",
+    "expected_goal": {
+      "type": "unknown"
+    }
+  }
+]

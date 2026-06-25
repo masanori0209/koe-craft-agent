@@ -1,0 +1,14 @@
+{
+  "id": "shelter_low_materials",
+  "action": "emergency_shelter",
+  "radius": 1,
+  "material_count": 3,
+  "grid": [
+    "#########",
+    "#.......#",
+    "#.....H.#",
+    "#...P...#",
+    "#.......#",
+    "#########"
+  ]
+}

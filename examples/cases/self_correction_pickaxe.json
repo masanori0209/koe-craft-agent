@@ -1,0 +1,24 @@
+{
+  "recognized_text": "松明置いて、いや、先に石のピッケル作って",
+  "state": {
+    "inventory": {
+      "minecraft:oak_log": 0,
+      "minecraft:stick": 0,
+      "minecraft:cobblestone": 0
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true,
+      "minecraft:coal_ore": false
+    }
+  },
+  "expected": {
+    "goal": "craft_stone_pickaxe",
+    "route": "stone_pickaxe_route",
+    "features": {
+      "has_self_correction": true,
+      "cancelled_goal": "place_torch",
+      "active_goal": "craft_stone_pickaxe"
+    }
+  }
+}

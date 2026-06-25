@@ -1,0 +1,19 @@
+{
+  "recognized_text": "取って",
+  "state": {
+    "inventory": {},
+    "nearby": {},
+    "nearby_items": [
+      {
+        "item": "minecraft:cobblestone",
+        "count": 1,
+        "distance": 2
+      }
+    ]
+  },
+  "expected": {
+    "route": "context_action_route",
+    "tasks": ["pickup_items"],
+    "actions": [{ "type": "collect_drops" }]
+  }
+}

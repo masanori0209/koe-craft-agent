@@ -1,0 +1,28 @@
+---
+description: Agent harness and loop engineering rules
+globs:
+  - "agent/**"
+  - "examples/**"
+  - "scripts/**"
+  - "docs/harness.md"
+  - "docs/loop-engineering.md"
+alwaysApply: false
+---
+
+# Harness Rules
+
+For agent-side changes:
+1. Add or update fixture cases.
+2. Run the narrowest relevant harness.
+3. Repair from failure logs.
+4. Re-run the harness.
+
+Expected commands:
+```bash
+make agent-fixtures
+make agent-dry-run
+make agent-check
+```
+
+Do not mark work complete if the harness has not run.
+If the harness command does not exist yet, create it as part of the change.

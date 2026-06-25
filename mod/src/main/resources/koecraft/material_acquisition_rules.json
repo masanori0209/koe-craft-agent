@@ -1,0 +1,233 @@
+{
+  "version": "1.21.4",
+  "rules": [
+    {
+      "item": "minecraft:white_wool",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "sheep", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 180 },
+        { "type": "collect_drops", "item": "minecraft:white_wool", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:leather",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "cow", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 180 },
+        { "type": "collect_drops", "item": "minecraft:leather", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:feather",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "chicken", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 180 },
+        { "type": "collect_drops", "item": "minecraft:feather", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:ink_sac",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "squid", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:ink_sac", "search_radius": 12, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:bone",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "skeleton", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:bone", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:string",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "spider", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:string", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:spider_eye",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "spider", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:spider_eye", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:gunpowder",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "creeper", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 240 },
+        { "type": "collect_drops", "item": "minecraft:gunpowder", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:ender_pearl",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "enderman", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 280 },
+        { "type": "collect_drops", "item": "minecraft:ender_pearl", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:blaze_rod",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "blaze", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 280 },
+        { "type": "collect_drops", "item": "minecraft:blaze_rod", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:slime_ball",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "slime", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 260 },
+        { "type": "collect_drops", "item": "minecraft:slime_ball", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:rabbit_hide",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "rabbit", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:rabbit_hide", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:rabbit",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "rabbit", "count_per_item": 1, "search_radius": 12, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:rabbit", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:prismarine_shard",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "guardian", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 300 },
+        { "type": "collect_drops", "item": "minecraft:prismarine_shard", "search_radius": 12, "timeout_ticks": 200 }
+      ]
+    },
+    {
+      "item": "minecraft:ghast_tear",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "ghast", "count_per_item": 1, "search_radius": 24, "timeout_ticks": 320 },
+        { "type": "collect_drops", "item": "minecraft:ghast_tear", "search_radius": 14, "timeout_ticks": 220 }
+      ]
+    },
+    {
+      "item": "minecraft:glow_ink_sac",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "squid", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:glow_ink_sac", "search_radius": 12, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:amethyst_shard",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:amethyst_cluster", "count_per_item": 1, "search_radius": 18, "timeout_ticks": 240 },
+        { "type": "collect_drops", "item": "minecraft:amethyst_shard", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:glowstone", "count_per_item": 1, "search_radius": 18, "timeout_ticks": 240 },
+        { "type": "collect_drops", "item": "minecraft:glowstone_dust", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:snowball",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:snow", "count_per_item": 1, "search_radius": 14, "timeout_ticks": 180 },
+        { "type": "collect_drops", "item": "minecraft:snowball", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:nether_wart",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:nether_wart", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 200 },
+        { "type": "collect_drops", "item": "minecraft:nether_wart", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:moss_block",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:moss_block", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 200 },
+        { "type": "collect_drops", "item": "minecraft:moss_block", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:sugar_cane",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:sugar_cane", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 180 },
+        { "type": "collect_drops", "item": "minecraft:sugar_cane", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:sand",
+      "actions": [
+        { "type": "collect_block", "block_group": "sand", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 180 },
+        { "type": "collect_drops", "item": "minecraft:sand", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:gravel",
+      "actions": [
+        { "type": "collect_block", "block_group": "gravel", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 180 },
+        { "type": "collect_drops", "item": "minecraft:gravel", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:flint",
+      "actions": [
+        { "type": "collect_block", "block_group": "gravel", "count_per_item": 4, "min_count": 8, "search_radius": 16, "timeout_ticks": 260 },
+        { "type": "collect_drops", "item": "minecraft:flint", "search_radius": 10, "timeout_ticks": 180 }
+      ]
+    },
+    {
+      "item": "minecraft:cactus",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:cactus", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 200 },
+        { "type": "collect_drops", "item": "minecraft:cactus", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:clay_ball",
+      "actions": [
+        { "type": "collect_block", "block_group": "clay", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:clay_ball", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:egg",
+      "actions": [
+        { "type": "collect_drops", "item": "minecraft:egg", "search_radius": 16, "timeout_ticks": 600 }
+      ]
+    },
+    {
+      "item": "minecraft:wither_rose",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:wither_rose", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 200 },
+        { "type": "collect_drops", "item": "minecraft:wither_rose", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:pitcher_plant",
+      "actions": [
+        { "type": "collect_block", "block": "minecraft:pitcher_plant", "count_per_item": 1, "search_radius": 16, "timeout_ticks": 220 },
+        { "type": "collect_drops", "item": "minecraft:pitcher_plant", "search_radius": 10, "timeout_ticks": 160 }
+      ]
+    },
+    {
+      "item": "minecraft:nautilus_shell",
+      "actions": [
+        { "type": "attack_entity", "entity_group": "drowned", "count_per_item": 2, "search_radius": 18, "timeout_ticks": 360 },
+        { "type": "collect_drops", "item": "minecraft:nautilus_shell", "search_radius": 12, "timeout_ticks": 220 }
+      ]
+    },
+    {
+      "item": "minecraft:turtle_scute",
+      "actions": [
+        { "type": "collect_drops", "item": "minecraft:turtle_scute", "search_radius": 16, "timeout_ticks": 600 }
+      ]
+    },
+    {
+      "item": "minecraft:armadillo_scute",
+      "actions": [
+        { "type": "collect_drops", "item": "minecraft:armadillo_scute", "search_radius": 16, "timeout_ticks": 600 }
+      ]
+    }
+  ]
+}

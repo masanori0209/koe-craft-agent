@@ -1,0 +1,26 @@
+{
+  "recognized_text": "食料を集めたい",
+  "state": {
+    "inventory": {},
+    "nearby": {
+      "minecraft:sweet_berry_bush": true
+    },
+    "nearby_entities": [
+      {
+        "type": "minecraft:cow",
+        "distance": 4,
+        "food_animal": true
+      }
+    ],
+    "player": {
+      "health": 18,
+      "hunger": 8,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "collect_food_route",
+    "tasks": ["collect_noncombat_food", "eat_food"]
+  }
+}

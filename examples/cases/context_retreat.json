@@ -1,0 +1,12 @@
+{
+  "recognized_text": "逃げて",
+  "state": {
+    "inventory": {},
+    "nearby": {}
+  },
+  "expected": {
+    "route": "context_action_route",
+    "tasks": ["defensive_move"],
+    "actions": [{ "type": "defensive_move" }]
+  }
+}

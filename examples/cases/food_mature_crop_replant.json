@@ -1,0 +1,33 @@
+{
+  "recognized_text": "食料を集めたい",
+  "state": {
+    "inventory": {
+      "minecraft:wheat_seeds": 2
+    },
+    "nearby": {
+      "minecraft:wheat": true
+    },
+    "nearby_block_details": [
+      {
+        "block": "minecraft:wheat",
+        "x": 1,
+        "y": 64,
+        "z": 1,
+        "crop": true,
+        "crop_age": 7,
+        "crop_max_age": 7,
+        "crop_mature": true
+      }
+    ],
+    "player": {
+      "health": 18,
+      "hunger": 8,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "collect_food_route",
+    "tasks": ["collect_food", "replant_crop", "eat_food"]
+  }
+}

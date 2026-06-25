@@ -1,0 +1,19 @@
+{
+  "recognized_text": "盾を作って",
+  "state": {
+    "inventory": {
+      "minecraft:oak_planks": 6,
+      "minecraft:iron_ingot": 1,
+      "minecraft:crafting_table": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "craft_item_route",
+    "tasks": [
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_recipe"
+    ]
+  }
+}

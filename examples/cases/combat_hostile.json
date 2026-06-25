@@ -1,0 +1,25 @@
+{
+  "recognized_text": "敵を倒して",
+  "state": {
+    "inventory": {},
+    "nearby": {},
+    "nearby_entities": [
+      {
+        "type": "minecraft:zombie",
+        "distance": 4,
+        "hostile": true
+      }
+    ],
+    "dangerous_conditions": ["hostile_mob_within_5_blocks"],
+    "player": {
+      "health": 18,
+      "hunger": 12,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "combat_route",
+    "tasks": ["attack_hostile"]
+  }
+}

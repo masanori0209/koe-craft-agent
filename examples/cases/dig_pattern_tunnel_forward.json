@@ -1,0 +1,14 @@
+{
+  "recognized_text": "横穴を4ブロック掘って",
+  "state": {
+    "inventory": {
+      "minecraft:stone_pickaxe": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "dig_pattern_route",
+    "tasks": ["check_tool_durability", "dig_pattern"],
+    "actions": [{ "type": "dig_pattern" }]
+  }
+}

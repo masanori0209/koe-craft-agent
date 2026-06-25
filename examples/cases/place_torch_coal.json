@@ -1,0 +1,22 @@
+{
+  "recognized_text": "暗いから松明置いて",
+  "state": {
+    "inventory": {
+      "minecraft:torch": 0,
+      "minecraft:stick": 0,
+      "minecraft:coal": 2,
+      "minecraft:oak_log": 0
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true,
+      "minecraft:coal_ore": false
+    },
+    "light_level": 3
+  },
+  "expected": {
+    "goal": "place_torch",
+    "route": "coal_route",
+    "tasks": ["collect_log", "pickup_items", "craft_planks", "craft_sticks", "craft_torch", "ensure_torch_hotbar", "place_torch"]
+  }
+}

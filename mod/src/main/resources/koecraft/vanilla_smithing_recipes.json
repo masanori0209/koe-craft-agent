@@ -1,0 +1,214 @@
+{
+  "version": "1.21.4",
+  "generated_at": "2026-06-18T13:46:31.548Z",
+  "recipe_count": 9,
+  "recipes": [
+    {
+      "recipe_id": "minecraft:netherite_axe_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_axe",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_axe"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_boots_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_boots",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_boots"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_chestplate_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_chestplate",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_chestplate"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_helmet_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_helmet",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_helmet"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_hoe_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_hoe",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_hoe"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_leggings_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_leggings",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_leggings"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_pickaxe_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_pickaxe",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_pickaxe"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_shovel_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_shovel",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_shovel"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_sword_smithing",
+      "type": "minecraft:smithing_transform",
+      "result": {
+        "id": "minecraft:netherite_sword",
+        "count": 1
+      },
+      "template": [
+        {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      ],
+      "base": [
+        {
+          "item": "minecraft:diamond_sword"
+        }
+      ],
+      "addition": [
+        {
+          "tag": "minecraft:netherite_tool_materials"
+        }
+      ]
+    }
+  ]
+}

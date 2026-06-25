@@ -1,0 +1,23 @@
+{
+  "recognized_text": "収穫して",
+  "state": {
+    "inventory": {},
+    "nearby": {
+      "minecraft:wheat": true
+    },
+    "nearby_block_details": [
+      {
+        "block": "minecraft:wheat",
+        "crop": true,
+        "crop_mature": true,
+        "distance": 3
+      }
+    ],
+    "allow_village_farm_harvest": true
+  },
+  "expected": {
+    "route": "context_action_route",
+    "tasks": ["collect_food", "replant_crop"],
+    "actions": [{ "type": "collect_block" }, { "type": "replant_crop" }]
+  }
+}

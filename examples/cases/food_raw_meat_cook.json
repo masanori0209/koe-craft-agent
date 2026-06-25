@@ -1,0 +1,22 @@
+{
+  "recognized_text": "食料を集めたい",
+  "state": {
+    "inventory": {
+      "minecraft:beef": 1,
+      "minecraft:oak_planks": 2
+    },
+    "nearby": {
+      "minecraft:furnace": true
+    },
+    "player": {
+      "health": 18,
+      "hunger": 8,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "collect_food_route",
+    "tasks": ["open_furnace", "smelt_food", "close_screen", "eat_food"]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "recognized_text": "ネザーに行きたい",
+  "state": {
+    "inventory": {
+      "minecraft:oak_log": 2,
+      "minecraft:oak_planks": 8,
+      "minecraft:stick": 4,
+      "minecraft:crafting_table": 1,
+      "minecraft:stone_pickaxe": 1,
+      "minecraft:furnace": 1,
+      "minecraft:coal": 2
+    },
+    "nearby": {
+      "minecraft:iron_ore": true,
+      "minecraft:gravel": true
+    }
+  },
+  "expected": {
+    "route": "prepare_nether_route",
+    "tasks": [
+      "collect_iron_ore",
+      "pickup_items",
+      "ensure_furnace_hotbar",
+      "open_furnace",
+      "smelt_iron",
+      "close_screen",
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_recipe",
+      "collect_gravel_for_flint",
+      "pickup_items",
+      "craft_recipe"
+    ],
+    "actions": [
+      { "type": "collect_block" },
+      { "type": "smelt" },
+      { "type": "craft", "recipe": "minecraft:bucket" },
+      { "type": "craft", "recipe": "minecraft:flint_and_steel" }
+    ]
+  }
+}

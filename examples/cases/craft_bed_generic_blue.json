@@ -1,0 +1,25 @@
+{
+  "recognized_text": "ベッド作って",
+  "state": {
+    "inventory": {
+      "minecraft:blue_wool": 3,
+      "minecraft:oak_planks": 3,
+      "minecraft:crafting_table": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "craft_item_route",
+    "tasks": [
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_recipe"
+    ],
+    "actions": [
+      {
+        "type": "craft",
+        "recipe": "minecraft:blue_bed"
+      }
+    ]
+  }
+}

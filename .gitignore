@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+agent/node_modules/
+
+# Build outputs
+dist/
+build/
+target/
+out/
+.gradle/
+**/build/
+**/.gradle/
+
+# Local secrets and machine-specific config
+.env
+.env.*
+!.env.example
+
+# Runtime logs, traces, recordings, and generated reports
+logs/**
+!logs/
+!logs/traces/
+!logs/traces/.gitkeep
+*.log
+*.wav
+*.mp3
+*.m4a
+*.mov
+*.mp4
+
+# OS / IDE noise
+.DS_Store
+.idea/
+*.iml

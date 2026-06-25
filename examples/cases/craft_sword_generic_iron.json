@@ -1,0 +1,25 @@
+{
+  "recognized_text": "剣を作って",
+  "state": {
+    "inventory": {
+      "minecraft:iron_ingot": 2,
+      "minecraft:stick": 1,
+      "minecraft:crafting_table": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "craft_item_route",
+    "tasks": [
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_recipe"
+    ],
+    "actions": [
+      {
+        "type": "craft",
+        "recipe": "minecraft:iron_sword"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "shelter_hostile_north",
+  "action": "emergency_shelter",
+  "radius": 1,
+  "material_count": 8,
+  "grid": [
+    "#########",
+    "#...H...#",
+    "#.......#",
+    "#...P...#",
+    "#.......#",
+    "#########"
+  ]
+}

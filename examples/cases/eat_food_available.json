@@ -1,0 +1,20 @@
+{
+  "recognized_text": "お腹すいたから食べ物ほしい",
+  "state": {
+    "inventory": {
+      "minecraft:bread": 2
+    },
+    "nearby": {},
+    "player": {
+      "health": 18,
+      "hunger": 5,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    },
+    "dangerous_conditions": ["hunger_below_6"]
+  },
+  "expected": {
+    "route": "eat_food_route",
+    "tasks": ["eat_food"]
+  }
+}

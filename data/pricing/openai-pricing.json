@@ -1,0 +1,42 @@
+{
+  "source": "https://openai.com/api/pricing/",
+  "checked_at": "2026-06-15",
+  "currency": "USD",
+  "unit": "1M tokens",
+  "notes": [
+    "Keep this file as a local estimate snapshot. Verify current prices before live paid runs.",
+    "Default KoeCraft harness commands do not call OpenAI."
+  ],
+  "models": {
+    "gpt-4o-mini": {
+      "label": "GPT-4o mini",
+      "input_per_1m": 0.15,
+      "cached_input_per_1m": 0.075,
+      "output_per_1m": 0.6
+    },
+    "gpt-5-mini": {
+      "label": "GPT-5 mini",
+      "input_per_1m": 0.25,
+      "cached_input_per_1m": 0.025,
+      "output_per_1m": 2
+    },
+    "gpt-5.4-mini": {
+      "label": "GPT-5.4 mini",
+      "input_per_1m": 0.75,
+      "cached_input_per_1m": 0.075,
+      "output_per_1m": 4.5
+    },
+    "gpt-5.4": {
+      "label": "GPT-5.4",
+      "input_per_1m": 2.5,
+      "cached_input_per_1m": 0.25,
+      "output_per_1m": 15
+    },
+    "gpt-5.5": {
+      "label": "GPT-5.5",
+      "input_per_1m": 5,
+      "cached_input_per_1m": 0.5,
+      "output_per_1m": 30
+    }
+  }
+}

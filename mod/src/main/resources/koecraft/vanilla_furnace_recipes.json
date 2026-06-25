@@ -1,0 +1,1608 @@
+{
+  "version": "1.21.4",
+  "generated_at": "2026-06-18T13:46:31.548Z",
+  "recipe_count": 113,
+  "recipes": [
+    {
+      "recipe_id": "minecraft:baked_potato",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:baked_potato",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:potato"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:baked_potato_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:baked_potato",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:potato"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:baked_potato_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:baked_potato",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:potato"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:black_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:black_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:black_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:blue_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:blue_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:blue_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:brick",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:brick",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:clay_ball"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:brown_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:brown_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:brown_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:charcoal",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:charcoal",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "tag": "minecraft:logs_that_burn"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:coal_from_blasting_coal_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:coal",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:coal_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:coal_from_blasting_deepslate_coal_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:coal",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_coal_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:coal_from_smelting_coal_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:coal",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:coal_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:coal_from_smelting_deepslate_coal_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:coal",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_coal_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_beef",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cooked_beef",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:beef"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_beef_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:cooked_beef",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:beef"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_beef_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:cooked_beef",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:beef"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_chicken",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cooked_chicken",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:chicken"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_chicken_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:cooked_chicken",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:chicken"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_chicken_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:cooked_chicken",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:chicken"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_cod",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cooked_cod",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:cod"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_cod_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:cooked_cod",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:cod"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_cod_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:cooked_cod",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:cod"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_mutton",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cooked_mutton",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:mutton"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_mutton_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:cooked_mutton",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:mutton"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_mutton_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:cooked_mutton",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:mutton"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_porkchop",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cooked_porkchop",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:porkchop"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_porkchop_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:cooked_porkchop",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:porkchop"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_porkchop_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:cooked_porkchop",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:porkchop"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_rabbit",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cooked_rabbit",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:rabbit"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_rabbit_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:cooked_rabbit",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:rabbit"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_rabbit_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:cooked_rabbit",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:rabbit"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_salmon",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cooked_salmon",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:salmon"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_salmon_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:cooked_salmon",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:salmon"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cooked_salmon_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:cooked_salmon",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:salmon"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:copper_ingot_from_blasting_copper_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:copper_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:copper_ingot_from_blasting_deepslate_copper_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_copper_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:copper_ingot_from_blasting_raw_copper",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:raw_copper"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:copper_ingot_from_smelting_copper_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:copper_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:copper_ingot_from_smelting_deepslate_copper_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_copper_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:copper_ingot_from_smelting_raw_copper",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:raw_copper"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cracked_deepslate_bricks",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cracked_deepslate_bricks",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_bricks"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cracked_deepslate_tiles",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cracked_deepslate_tiles",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_tiles"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cracked_nether_bricks",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cracked_nether_bricks",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:nether_bricks"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cracked_polished_blackstone_bricks",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cracked_polished_blackstone_bricks",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:polished_blackstone_bricks"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cracked_stone_bricks",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cracked_stone_bricks",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:stone_bricks"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:cyan_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:cyan_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:cyan_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:deepslate",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:deepslate",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:cobbled_deepslate"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:diamond_from_blasting_deepslate_diamond_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:diamond",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_diamond_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:diamond_from_blasting_diamond_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:diamond",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:diamond_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:diamond_from_smelting_deepslate_diamond_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:diamond",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_diamond_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:diamond_from_smelting_diamond_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:diamond",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:diamond_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:dried_kelp_from_campfire_cooking",
+      "type": "minecraft:campfire_cooking",
+      "result": {
+        "id": "minecraft:dried_kelp",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:kelp"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:dried_kelp_from_smelting",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:dried_kelp",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:kelp"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:dried_kelp_from_smoking",
+      "type": "minecraft:smoking",
+      "result": {
+        "id": "minecraft:dried_kelp",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:kelp"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:emerald_from_blasting_deepslate_emerald_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:emerald",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_emerald_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:emerald_from_blasting_emerald_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:emerald",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:emerald_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:emerald_from_smelting_deepslate_emerald_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:emerald",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_emerald_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:emerald_from_smelting_emerald_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:emerald",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:emerald_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:glass",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:glass",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "tag": "minecraft:smelts_to_glass"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_blasting_deepslate_gold_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_gold_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_blasting_gold_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:gold_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_blasting_nether_gold_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:nether_gold_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_blasting_raw_gold",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:raw_gold"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_smelting_deepslate_gold_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_gold_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_smelting_gold_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:gold_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_smelting_nether_gold_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:nether_gold_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_ingot_from_smelting_raw_gold",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:raw_gold"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_nugget_from_blasting",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:gold_nugget",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:golden_pickaxe"
+        },
+        {
+          "item": "minecraft:golden_shovel"
+        },
+        {
+          "item": "minecraft:golden_axe"
+        },
+        {
+          "item": "minecraft:golden_hoe"
+        },
+        {
+          "item": "minecraft:golden_sword"
+        },
+        {
+          "item": "minecraft:golden_helmet"
+        },
+        {
+          "item": "minecraft:golden_chestplate"
+        },
+        {
+          "item": "minecraft:golden_leggings"
+        },
+        {
+          "item": "minecraft:golden_boots"
+        },
+        {
+          "item": "minecraft:golden_horse_armor"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gold_nugget_from_smelting",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:gold_nugget",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:golden_pickaxe"
+        },
+        {
+          "item": "minecraft:golden_shovel"
+        },
+        {
+          "item": "minecraft:golden_axe"
+        },
+        {
+          "item": "minecraft:golden_hoe"
+        },
+        {
+          "item": "minecraft:golden_sword"
+        },
+        {
+          "item": "minecraft:golden_helmet"
+        },
+        {
+          "item": "minecraft:golden_chestplate"
+        },
+        {
+          "item": "minecraft:golden_leggings"
+        },
+        {
+          "item": "minecraft:golden_boots"
+        },
+        {
+          "item": "minecraft:golden_horse_armor"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:gray_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:gray_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:gray_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:green_dye",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:green_dye",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:cactus"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:green_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:green_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:green_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_ingot_from_blasting_deepslate_iron_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_iron_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_ingot_from_blasting_iron_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:iron_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_ingot_from_blasting_raw_iron",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:raw_iron"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_ingot_from_smelting_deepslate_iron_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_iron_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_ingot_from_smelting_iron_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:iron_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_ingot_from_smelting_raw_iron",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:raw_iron"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_nugget_from_blasting",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:iron_nugget",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:iron_pickaxe"
+        },
+        {
+          "item": "minecraft:iron_shovel"
+        },
+        {
+          "item": "minecraft:iron_axe"
+        },
+        {
+          "item": "minecraft:iron_hoe"
+        },
+        {
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "item": "minecraft:iron_helmet"
+        },
+        {
+          "item": "minecraft:iron_chestplate"
+        },
+        {
+          "item": "minecraft:iron_leggings"
+        },
+        {
+          "item": "minecraft:iron_boots"
+        },
+        {
+          "item": "minecraft:iron_horse_armor"
+        },
+        {
+          "item": "minecraft:chainmail_helmet"
+        },
+        {
+          "item": "minecraft:chainmail_chestplate"
+        },
+        {
+          "item": "minecraft:chainmail_leggings"
+        },
+        {
+          "item": "minecraft:chainmail_boots"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:iron_nugget_from_smelting",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:iron_nugget",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:iron_pickaxe"
+        },
+        {
+          "item": "minecraft:iron_shovel"
+        },
+        {
+          "item": "minecraft:iron_axe"
+        },
+        {
+          "item": "minecraft:iron_hoe"
+        },
+        {
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "item": "minecraft:iron_helmet"
+        },
+        {
+          "item": "minecraft:iron_chestplate"
+        },
+        {
+          "item": "minecraft:iron_leggings"
+        },
+        {
+          "item": "minecraft:iron_boots"
+        },
+        {
+          "item": "minecraft:iron_horse_armor"
+        },
+        {
+          "item": "minecraft:chainmail_helmet"
+        },
+        {
+          "item": "minecraft:chainmail_chestplate"
+        },
+        {
+          "item": "minecraft:chainmail_leggings"
+        },
+        {
+          "item": "minecraft:chainmail_boots"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:lapis_lazuli_from_blasting_deepslate_lapis_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:lapis_lazuli",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_lapis_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:lapis_lazuli_from_blasting_lapis_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:lapis_lazuli",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:lapis_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:lapis_lazuli",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_lapis_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:lapis_lazuli_from_smelting_lapis_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:lapis_lazuli",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:lapis_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:light_blue_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:light_blue_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:light_blue_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:light_gray_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:light_gray_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:light_gray_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:lime_dye_from_smelting",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:lime_dye",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:sea_pickle"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:lime_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:lime_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:lime_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:magenta_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:magenta_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:magenta_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:nether_brick",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:nether_brick",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_scrap",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:netherite_scrap",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:ancient_debris"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:netherite_scrap_from_blasting",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:netherite_scrap",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:ancient_debris"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:orange_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:orange_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:orange_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:pink_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:pink_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:pink_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:popped_chorus_fruit",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:popped_chorus_fruit",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:chorus_fruit"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:purple_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:purple_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:purple_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:quartz",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:quartz",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:nether_quartz_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:quartz_from_blasting",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:quartz",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:nether_quartz_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:red_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:red_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:red_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:redstone_from_blasting_deepslate_redstone_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:redstone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_redstone_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:redstone_from_blasting_redstone_ore",
+      "type": "minecraft:blasting",
+      "result": {
+        "id": "minecraft:redstone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:redstone_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:redstone_from_smelting_deepslate_redstone_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:redstone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:deepslate_redstone_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:redstone_from_smelting_redstone_ore",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:redstone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:redstone_ore"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:resin_brick",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:resin_brick",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:resin_clump"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:smooth_basalt",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:smooth_basalt",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:basalt"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:smooth_quartz",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:smooth_quartz",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:quartz_block"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:smooth_red_sandstone",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:smooth_red_sandstone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:red_sandstone"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:smooth_sandstone",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:smooth_sandstone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:sandstone"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:smooth_stone",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:smooth_stone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:stone"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:sponge",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:sponge",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:wet_sponge"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:stone",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:stone",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:clay"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:white_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:white_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:white_terracotta"
+        }
+      ]
+    },
+    {
+      "recipe_id": "minecraft:yellow_glazed_terracotta",
+      "type": "minecraft:smelting",
+      "result": {
+        "id": "minecraft:yellow_glazed_terracotta",
+        "count": 1
+      },
+      "ingredient": [
+        {
+          "item": "minecraft:yellow_terracotta"
+        }
+      ]
+    }
+  ]
+}

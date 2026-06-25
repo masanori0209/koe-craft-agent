@@ -1,0 +1,12 @@
+{
+  "recognized_text": "前に3ブロック歩いて",
+  "state": {
+    "inventory": {},
+    "nearby": {}
+  },
+  "expected": {
+    "route": "move_route",
+    "tasks": ["move"],
+    "actions": [{ "type": "move" }]
+  }
+}

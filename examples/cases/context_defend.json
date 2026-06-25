@@ -1,0 +1,14 @@
+{
+  "recognized_text": "防御して",
+  "state": {
+    "inventory": {
+      "minecraft:shield": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "context_action_route",
+    "tasks": ["equip_combat_gear", "defensive_move"],
+    "actions": [{ "type": "equip_gear" }, { "type": "defensive_move" }]
+  }
+}

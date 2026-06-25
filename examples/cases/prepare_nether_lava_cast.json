@@ -1,0 +1,26 @@
+{
+  "recognized_text": "溶岩バケツでネザーポータル作って",
+  "state": {
+    "inventory": {
+      "minecraft:water_bucket": 1,
+      "minecraft:lava_bucket": 1,
+      "minecraft:flint_and_steel": 1
+    },
+    "nearby": {
+      "minecraft:lava": true,
+      "minecraft:water": true
+    }
+  },
+  "expected": {
+    "route": "prepare_nether_route",
+    "tasks": [
+      "build_nether_portal",
+      "ensure_flint_and_steel_hotbar",
+      "ignite_nether_portal"
+    ],
+    "actions": [
+      { "type": "build_nether_portal" },
+      { "type": "ignite_nether_portal" }
+    ]
+  }
+}

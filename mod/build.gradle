@@ -1,0 +1,111 @@
+plugins {
+    id "fabric-loom" version "1.10-SNAPSHOT"
+    id "maven-publish"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    implementation "org.java-websocket:Java-WebSocket:1.5.7"
+    include "org.java-websocket:Java-WebSocket:1.5.7"
+    implementation "com.microsoft.onnxruntime:onnxruntime:1.26.0"
+    include "com.microsoft.onnxruntime:onnxruntime:1.26.0"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": inputs.properties.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+}
+
+tasks.register("plannerFixtures", JavaExec) {
+    group = "verification"
+    description = "Runs KoeCraft Java utterance planner fixture checks without launching Minecraft."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftPlannerFixtureMain"
+    args "${rootProject.projectDir.parentFile}/examples/speech_fixtures.json"
+}
+
+tasks.register("recipeDependencyAudit", JavaExec) {
+    group = "verification"
+    description = "Audits bundled vanilla recipe outputs against the deterministic dependency planner without launching Minecraft."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftRecipeDependencyAuditMain"
+    args "${rootProject.projectDir.parentFile}/data/minecraft/vanilla_recipes.json", "${rootProject.projectDir.parentFile}/logs/reports"
+}
+
+tasks.register("asrComparisonReport", JavaExec) {
+    group = "verification"
+    description = "Generates a Whisper vs AmiVoice fixture comparison report for routing and planning."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftAsrComparisonReportMain"
+    args "${rootProject.projectDir.parentFile}/examples/asr_comparison_scenarios.json", "${rootProject.projectDir.parentFile}/logs/reports"
+}
+
+tasks.register("liveAsrComparisonReport", JavaExec) {
+    group = "verification"
+    description = "Generates a live audio Whisper vs AmiVoice comparison report using local TTS audio and configured API keys."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftLiveAsrComparisonMain"
+    args "${rootProject.projectDir.parentFile}/examples/asr_comparison_scenarios.json",
+        "${rootProject.projectDir.parentFile}/logs/reports",
+        "${rootProject.projectDir.parentFile}/logs/asr-live-audio",
+        "${rootProject.projectDir.parentFile}"
+}
+
+tasks.register("rerenderLiveAsrComparisonReport", JavaExec) {
+    group = "verification"
+    description = "Re-renders the live audio ASR comparison report from saved recognitions without calling ASR APIs."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftAsrComparisonReportMain"
+    args "${rootProject.projectDir.parentFile}/logs/reports/asr-live-recognitions.json",
+        "${rootProject.projectDir.parentFile}/logs/reports"
+}
+
+tasks.register("voiceVadSmoke", JavaExec) {
+    group = "verification"
+    description = "Loads the bundled Silero VAD ONNX model and checks silence is not treated as speech."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftVoiceActivityGateSmokeMain"
+}
+
+tasks.register("localGoalPathfinderSmoke", JavaExec) {
+    group = "verification"
+    description = "Runs the local goal pathfinder smoke checks without launching Minecraft."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftLocalGoalPathfinderSmokeMain"
+}
+
+tasks.register("hudLabelsSmoke", JavaExec) {
+    group = "verification"
+    description = "Checks that Minecraft HUD labels stay child-friendly and avoid internal status words."
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "dev.koecraft.agentmod.KoeCraftHudLabelsSmokeMain"
+}
+
+tasks.named("check") {
+    dependsOn tasks.named("plannerFixtures")
+    dependsOn tasks.named("voiceVadSmoke")
+    dependsOn tasks.named("localGoalPathfinderSmoke")
+    dependsOn tasks.named("hudLabelsSmoke")
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}

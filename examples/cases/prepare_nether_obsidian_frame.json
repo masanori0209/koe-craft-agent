@@ -1,0 +1,24 @@
+{
+  "recognized_text": "黒曜石でネザーポータル作って",
+  "state": {
+    "inventory": {
+      "minecraft:obsidian": 14,
+      "minecraft:flint_and_steel": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "prepare_nether_route",
+    "tasks": [
+      "ensure_obsidian_hotbar",
+      "build_nether_portal",
+      "ensure_flint_and_steel_hotbar",
+      "ignite_nether_portal"
+    ],
+    "actions": [
+      { "type": "ensure_hotbar" },
+      { "type": "build_nether_portal" },
+      { "type": "ignite_nether_portal" }
+    ]
+  }
+}

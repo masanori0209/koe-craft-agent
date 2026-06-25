@@ -1,0 +1,20 @@
+{
+  "recognized_text": "食料を集めたい",
+  "state": {
+    "inventory": {},
+    "nearby": {
+      "minecraft:wheat": true,
+      "minecraft:carrots": true
+    },
+    "player": {
+      "health": 18,
+      "hunger": 8,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "collect_food_route",
+    "tasks": ["collect_food", "replant_crop", "eat_food"]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "recognized_text": "暗いから松明置いて",
+  "state": {
+    "inventory": {
+      "minecraft:torch": 0,
+      "minecraft:stick": 0,
+      "minecraft:coal": 0,
+      "minecraft:charcoal": 0,
+      "minecraft:oak_log": 0,
+      "minecraft:cobblestone": 0
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true,
+      "minecraft:coal_ore": false
+    },
+    "light_level": 4
+  },
+  "expected": {
+    "goal": "place_torch",
+    "route": "charcoal_route",
+    "tasks": [
+      "collect_log",
+      "pickup_items",
+      "craft_planks",
+      "craft_sticks",
+      "craft_crafting_table",
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_wooden_pickaxe",
+      "close_screen",
+      "check_tool_durability",
+      "collect_cobblestone",
+      "pickup_items",
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_furnace",
+      "close_screen",
+      "ensure_furnace_hotbar",
+      "open_furnace",
+      "smelt_charcoal",
+      "close_screen",
+      "craft_torch",
+      "ensure_torch_hotbar",
+      "place_torch"
+    ]
+  }
+}

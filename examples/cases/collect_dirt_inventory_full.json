@@ -1,0 +1,22 @@
+{
+  "recognized_text": "土を掘りたい",
+  "state": {
+    "inventory": {
+      "minecraft:cobblestone": 64
+    },
+    "nearby": {
+      "minecraft:dirt": true
+    },
+    "dangerous_conditions": ["inventory_full"],
+    "player": {
+      "health": 18,
+      "hunger": 14,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "collect_block_route",
+    "tasks": ["drop_low_value", "collect_requested_block", "pickup_items"]
+  }
+}

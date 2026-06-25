@@ -1,0 +1,21 @@
+{
+  "recognized_text": "カーペット作って",
+  "state": {
+    "inventory": {
+      "minecraft:red_wool": 2
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "craft_item_route",
+    "tasks": [
+      "craft_recipe"
+    ],
+    "actions": [
+      {
+        "type": "craft",
+        "recipe": "minecraft:red_carpet"
+      }
+    ]
+  }
+}

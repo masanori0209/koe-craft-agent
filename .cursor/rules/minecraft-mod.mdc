@@ -1,0 +1,35 @@
+---
+description: Fabric Minecraft mod execution rules
+globs:
+  - "mod/**"
+alwaysApply: false
+---
+
+# Minecraft MOD Rules
+
+The Fabric client mod is only responsible for state scanning and survival-legal action execution.
+
+Allowed action categories:
+- look
+- move
+- sneak
+- jump
+- select hotbar item
+- use item
+- break reachable block
+- place held item
+- craft through player-accessible UI
+- abort
+
+Forbidden:
+- `/give`
+- `/fill`
+- `/setblock`
+- `/tp`
+- `/summon`
+- `/kill`
+- creative-mode-only behavior
+- bypassing inventory checks
+- continuing after abort
+
+Every action sequence must support cancellation and key release.

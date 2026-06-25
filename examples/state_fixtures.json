@@ -1,0 +1,46 @@
+[
+  {
+    "id": "torch_missing_charcoal_route",
+    "inventory": {
+      "minecraft:torch": 0,
+      "minecraft:stick": 0,
+      "minecraft:coal": 0,
+      "minecraft:charcoal": 0,
+      "minecraft:oak_log": 0,
+      "minecraft:cobblestone": 0
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true,
+      "minecraft:coal_ore": false
+    },
+    "expected_route": "charcoal_route"
+  },
+  {
+    "id": "torch_available_direct_place",
+    "inventory": {
+      "minecraft:torch": 3
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true,
+      "minecraft:coal_ore": false
+    },
+    "expected_route": "direct_place"
+  },
+  {
+    "id": "coal_available_coal_route",
+    "inventory": {
+      "minecraft:torch": 0,
+      "minecraft:stick": 0,
+      "minecraft:coal": 2,
+      "minecraft:oak_log": 0
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true,
+      "minecraft:coal_ore": false
+    },
+    "expected_route": "coal_route"
+  }
+]

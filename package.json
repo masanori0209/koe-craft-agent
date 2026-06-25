@@ -1,0 +1,22 @@
+{
+  "name": "koecraft-agent-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent-check": "bash scripts/harness/check-all.sh",
+    "agent-fixtures": "bash scripts/harness/fixtures.sh",
+    "agent-dry-run": "bash scripts/harness/dry-run.sh",
+    "minecraft:smoke": "echo \"minecraft:smoke was removed with the TypeScript agent. Use make mod-build, then launch Minecraft with the MOD jar.\"",
+    "doctor": "node scripts/node/doctor.mjs",
+    "mod-static": "node scripts/node/mod-static.mjs",
+    "openai:cost": "node scripts/node/openai-cost-estimate.mjs",
+    "amivoice:dict-check": "node scripts/node/amivoice-dict-check.mjs",
+    "minecraft:generate-vanilla-terms": "node scripts/node/generate-vanilla-terms.mjs",
+    "minecraft:generate-vanilla-recipes": "node scripts/node/generate-vanilla-recipes.mjs",
+    "minecraft:validate-recipe-catalog": "python3 scripts/python/validate_recipe_catalog.py"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

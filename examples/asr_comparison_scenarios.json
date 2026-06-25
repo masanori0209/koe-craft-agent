@@ -1,0 +1,296 @@
+[
+  {
+    "id": "amivoice_dictionary_torch",
+    "source_fixture": "amivoice_dictionary_with_custom_term",
+    "category": "place_light",
+    "utterance": "暗いから松明置いて",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "place_light", "target_item": "minecraft:torch"},
+    "focus": ["domain_terms", "profile_words", "rule_fast_path"],
+    "amivoice_value": "松明のようなMinecraft固有語は profileWords / 辞書で表記を寄せやすく、LLMを呼ばずにルールで即planできる。",
+    "asr": {
+      "amivoice": "暗いから松明置いて",
+      "whisper": "暗いから松明を置いて"
+    }
+  },
+  {
+    "id": "vague_light_reference",
+    "source_fixture": "vague_light_reference",
+    "category": "place_light",
+    "utterance": "あれあのあかりつけるやつ置いて",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "place_light", "target_item": "minecraft:torch"},
+    "focus": ["vague_language", "rule_fast_path"],
+    "amivoice_value": "正式名称を言えなくても、短い日本語発話を安定して拾えればKoeCraft側の意味ルールで松明設置へ落とせる。",
+    "asr": {
+      "amivoice": "あれあのあかりつけるやつ置いて",
+      "whisper": "あれ、あの明かりつけるやつ置いて"
+    }
+  },
+  {
+    "id": "craft_stone_pickaxe",
+    "source_fixture": "craft_stone_pickaxe_plain_suru",
+    "category": "craft",
+    "utterance": "石のツルハシ作る",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "craft_item", "target_item": "minecraft:stone_pickaxe"},
+    "focus": ["domain_terms", "craft_planning", "rule_fast_path"],
+    "amivoice_value": "石のツルハシのような頻出クラフト語を辞書で寄せると、レシピ解決まで deterministic に進めやすい。",
+    "asr": {
+      "amivoice": "石のツルハシ作る",
+      "whisper": "石のツルハシを作る"
+    }
+  },
+  {
+    "id": "craft_wooden_pickaxe_asr_repair",
+    "source_fixture": "craft_wooden_pickaxe_asr_yesterday",
+    "category": "craft",
+    "utterance": "木のツルハシ作って",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "craft_item", "target_item": "minecraft:wooden_pickaxe"},
+    "focus": ["asr_repair", "craft_planning", "domain_terms"],
+    "amivoice_value": "短い同音揺れは、AmiVoiceの結果をMinecraft文脈post-normalizerへ通して救済する運用が効く。",
+    "asr": {
+      "amivoice": "きのうつるはし作って",
+      "whisper": "木のツルハシ作って"
+    }
+  },
+  {
+    "id": "craft_pickaxe_bare_confusion",
+    "source_fixture": "craft_pickaxe_asr_watashi_confusion",
+    "category": "craft",
+    "utterance": "ツルハシ作って",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "craft_item", "target_item": "minecraft:stone_pickaxe"},
+    "focus": ["asr_repair", "craft_planning", "default_target"],
+    "amivoice_value": "実プレイで出た「私作って」系の誤認識も、作成文脈なら安全にツルハシへ戻せるかを回帰確認する。",
+    "asr": {
+      "amivoice": "私作って",
+      "whisper": "ツルハシ作って"
+    }
+  },
+  {
+    "id": "craft_crafting_table",
+    "source_fixture": "craft_crafting_table",
+    "category": "craft",
+    "utterance": "作業台作って",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "craft_item", "target_item": "minecraft:crafting_table"},
+    "focus": ["domain_terms", "craft_planning", "rule_fast_path"],
+    "amivoice_value": "作業台は以降の再帰クラフトの起点になるため、短く確実に拾えることが体験のテンポに効く。",
+    "asr": {
+      "amivoice": "作業台作って",
+      "whisper": "作業台を作って"
+    }
+  },
+  {
+    "id": "collect_coal_ore",
+    "source_fixture": "collect_coal_ore_rule_based",
+    "category": "collect",
+    "utterance": "石炭鉱石を掘って",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "collect_block", "block_group": "coal_ore"},
+    "focus": ["domain_terms", "collect_planning", "rule_fast_path"],
+    "amivoice_value": "鉱石名はMinecraft辞書の得意領域。拾えれば採掘・ドロップ回収までルールで接続できる。",
+    "asr": {
+      "amivoice": "石炭鉱石を掘って",
+      "whisper": "石炭鉱石を掘って"
+    }
+  },
+  {
+    "id": "dig_staircase",
+    "source_fixture": "dig_staircase",
+    "category": "dig",
+    "utterance": "階段掘りして",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "dig_pattern", "pattern": "staircase_down"},
+    "focus": ["domain_terms", "short_command", "rule_fast_path"],
+    "amivoice_value": "子供やプレイヤーが短く言う採掘パターンを即座にGoal化できるかを見る。",
+    "asr": {
+      "amivoice": "階段ぼりして",
+      "whisper": "階段掘りして"
+    }
+  },
+  {
+    "id": "pickup_take_short",
+    "source_fixture": "pickup_take_short",
+    "category": "pickup",
+    "utterance": "取って",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "pickup_items"},
+    "focus": ["short_command", "partial_fast_path", "rule_fast_path"],
+    "amivoice_value": "短命令はAmiVoice WebSocket partialと相性がよく、finalを待ちすぎず即実行する対象になる。",
+    "asr": {
+      "amivoice": "取って",
+      "whisper": "取って"
+    }
+  },
+  {
+    "id": "move_straight_partial",
+    "source_fixture": "conversation_move_straight_partial_asr",
+    "category": "move",
+    "utterance": "まっすぐ歩いて",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "move", "direction": "forward", "distance_blocks": 4},
+    "focus": ["short_command", "partial_fast_path", "movement"],
+    "amivoice_value": "AmiVoiceが途中結果として「まっすぐ」まで返した時点でも、安全な短命令として前進へ落とせる。",
+    "asr": {
+      "amivoice": "まっすぐ",
+      "whisper": "まっすぐ歩いて"
+    }
+  },
+  {
+    "id": "move_hundred_steps",
+    "source_fixture": "conversation_move_hundred_steps",
+    "category": "move",
+    "utterance": "100歩歩いて",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "move", "direction": "forward", "distance_blocks": 96},
+    "focus": ["numeric_command", "movement", "rule_fast_path"],
+    "amivoice_value": "数字入りの短命令がそのまま距離付きActionへ落ちるかを見る。",
+    "asr": {
+      "amivoice": "100歩歩いて",
+      "whisper": "100歩歩いて"
+    }
+  },
+  {
+    "id": "movement_swim",
+    "source_fixture": "movement_swim_forward",
+    "category": "move",
+    "utterance": "泳いで",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "move", "direction": "forward", "swim": true},
+    "focus": ["short_command", "partial_fast_path", "movement"],
+    "amivoice_value": "一語命令はAmiVoice streamingの低遅延運用で体感差が出やすい。",
+    "asr": {
+      "amivoice": "およいで",
+      "whisper": "泳いで"
+    }
+  },
+  {
+    "id": "movement_sprint_jump",
+    "source_fixture": "movement_sprint_jump",
+    "category": "move",
+    "utterance": "ダッシュジャンプして",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "move", "direction": "forward", "jump_while_sprinting": true},
+    "focus": ["short_command", "movement", "rule_fast_path"],
+    "amivoice_value": "ゲーム操作語は発話が短いので、認識後すぐにActionへ通る設計が効く。",
+    "asr": {
+      "amivoice": "ダッシュジャンプして",
+      "whisper": "ダッシュジャンプして"
+    }
+  },
+  {
+    "id": "build_bridge_hash_repair",
+    "source_fixture": "conversation_build_bridge_asr_hash",
+    "category": "build_bridge",
+    "utterance": "前に橋をかけて",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "build_bridge", "direction": "forward", "distance_blocks": 4},
+    "focus": ["asr_repair", "short_command", "movement"],
+    "amivoice_value": "実プレイで出た「ハッシュ」誤認識を、橋文脈だけで安全に補正できるかを見る。",
+    "asr": {
+      "amivoice": "前にハッシュをかけて",
+      "whisper": "前に橋をかけて"
+    }
+  },
+  {
+    "id": "search_village",
+    "source_fixture": "search_village_find",
+    "category": "explore",
+    "utterance": "村を見つけて",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "search_structure", "target_group": "village_hint"},
+    "focus": ["exploration", "domain_terms", "rule_fast_path"],
+    "amivoice_value": "村探索のようなプロジェクト中心シナリオで、構造物探索intentに落とせるかを見る。",
+    "asr": {
+      "amivoice": "村を見つけて",
+      "whisper": "村を見つけて"
+    }
+  },
+  {
+    "id": "search_structure_generic",
+    "source_fixture": "structure_search_explore",
+    "category": "explore",
+    "utterance": "構造物を探して",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "search_structure", "target_group": "structure_hint"},
+    "focus": ["exploration", "domain_terms", "rule_fast_path"],
+    "amivoice_value": "村以外の構造物探索でも、読み込み済みヒントのスキャンと bounded exploration に落とせるかを見る。",
+    "asr": {
+      "amivoice": "構造物を探して",
+      "whisper": "構造物を探して"
+    }
+  },
+  {
+    "id": "prepare_nether_bucket_portal",
+    "source_fixture": "prepare_nether_bucket_portal",
+    "category": "nether",
+    "utterance": "ネザーに行きたい",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "prepare_nether", "route": "bucket_portal"},
+    "focus": ["domain_terms", "long_goal", "rule_fast_path"],
+    "amivoice_value": "ネザーのような固有語は辞書対象として扱いやすく、長い準備計画の入口にできる。",
+    "asr": {
+      "amivoice": "ネザーに行きたい",
+      "whisper": "ネザーに行きたい"
+    }
+  },
+  {
+    "id": "nether_lava_cast",
+    "source_fixture": "conversation_nether_lava_cast",
+    "category": "nether",
+    "utterance": "溶岩でネザーゲート作って",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "prepare_nether", "route": "lava_cast"},
+    "focus": ["domain_terms", "route_selection", "rule_fast_path"],
+    "amivoice_value": "溶岩/ネザーゲートの組み合わせは、音声からルート選択まで直結する重要シナリオ。",
+    "asr": {
+      "amivoice": "溶岩でネザーゲート作って",
+      "whisper": "溶岩でネザーゲート作って"
+    }
+  },
+  {
+    "id": "child_make_house",
+    "source_fixture": "child_make_house",
+    "category": "child_mode",
+    "utterance": "おうち作って",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "build_structure", "style": "small_house"},
+    "focus": ["child_mode", "vague_language", "build"],
+    "amivoice_value": "子供っぽい言い方でも、KoeCraft側のルールで小さい家へ縮退できるかを見る。",
+    "asr": {
+      "amivoice": "おうち作って",
+      "whisper": "おうち作って"
+    }
+  },
+  {
+    "id": "child_confused_choices",
+    "source_fixture": "child_confused_plan_choices",
+    "category": "child_mode",
+    "utterance": "わかんない",
+    "expected_behavior": "plan",
+    "expected_goal": {"type": "ambient_chat"},
+    "focus": ["child_mode", "ambient_chat", "rule_fast_path"],
+    "amivoice_value": "作業指示ではない発話でも、子供向けの選択肢提示へ安全に落とす。",
+    "asr": {
+      "amivoice": "わかんない",
+      "whisper": "わかんない"
+    }
+  },
+  {
+    "id": "ambient_filler_sigh_ignored",
+    "source_fixture": "ambient_filler_sigh_ignored",
+    "category": "safety",
+    "utterance": "はあ",
+    "expected_behavior": "ignore",
+    "expected_goal": {"type": "unknown"},
+    "focus": ["false_positive_guard", "safety_ignore"],
+    "amivoice_value": "「はあ」が家作成などに誤爆しないことを確認する安全シナリオ。",
+    "asr": {
+      "amivoice": "はあ",
+      "whisper": "はあ"
+    }
+  }
+]

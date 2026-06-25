@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "koecraft_agent",
+  "version": "${version}",
+  "name": "KoeCraft Agent",
+  "description": "Unofficial Japanese voice-first survival executor bridge for KoeCraft Agent.",
+  "authors": ["KoeCraft contributors"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.koecraft.agentmod.KoeCraftAgentClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "recognized_text": "倒して",
+  "state": {
+    "inventory": {},
+    "nearby": {},
+    "nearby_entities": [
+      {
+        "type": "minecraft:zombie",
+        "distance": 4,
+        "hostile": true
+      }
+    ]
+  },
+  "expected": {
+    "route": "context_action_route",
+    "tasks": ["attack_hostile"],
+    "actions": [{ "type": "attack_entity" }]
+  }
+}

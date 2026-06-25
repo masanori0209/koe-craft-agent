@@ -1,0 +1,25 @@
+{
+  "recognized_text": "旗を作って",
+  "state": {
+    "inventory": {
+      "minecraft:black_wool": 6,
+      "minecraft:stick": 1,
+      "minecraft:crafting_table": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "craft_item_route",
+    "tasks": [
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_recipe"
+    ],
+    "actions": [
+      {
+        "type": "craft",
+        "recipe": "minecraft:black_banner"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "recognized_text": "待って、やっぱやめて",
+  "state": {
+    "inventory": {},
+    "nearby": {}
+  },
+  "expected": {
+    "goal": "abort",
+    "route": "abort",
+    "tasks": ["abort"]
+  }
+}

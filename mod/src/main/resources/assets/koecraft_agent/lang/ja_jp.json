@@ -1,0 +1,6 @@
+{
+  "category.koecraft_agent": "KoeCraft Agent",
+  "key.koecraft_agent.toggle_voice": "音声マイク切替",
+  "key.koecraft_agent.mute_voice": "音声マイク ミュート切替",
+  "key.koecraft_agent.stop_voice": "音声マイク停止"
+}

@@ -1,0 +1,24 @@
+{
+  "recognized_text": "食料を集めたい",
+  "state": {
+    "inventory": {},
+    "nearby": {},
+    "nearby_entities": [
+      {
+        "type": "minecraft:cow",
+        "distance": 4,
+        "food_animal": true
+      }
+    ],
+    "player": {
+      "health": 18,
+      "hunger": 8,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "collect_food_route",
+    "tasks": ["hunt_food_animal", "collect_food_drops", "eat_food"]
+  }
+}

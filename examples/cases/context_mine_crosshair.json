@@ -1,0 +1,14 @@
+{
+  "recognized_text": "掘って",
+  "state": {
+    "inventory": {
+      "minecraft:stone_pickaxe": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "context_action_route",
+    "tasks": ["check_tool_durability", "break_crosshair", "pickup_items"],
+    "actions": [{ "type": "break_block" }]
+  }
+}

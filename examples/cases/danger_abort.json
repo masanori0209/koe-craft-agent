@@ -1,0 +1,23 @@
+{
+  "recognized_text": "暗いから松明置いて",
+  "state": {
+    "inventory": {
+      "minecraft:torch": 2
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true
+    },
+    "dangerous_conditions": ["hostile_mob_within_5_blocks"],
+    "player": {
+      "health": 18,
+      "hunger": 14,
+      "dimension": "overworld",
+      "position": [0, 64, 0]
+    }
+  },
+  "expected": {
+    "route": "direct_place",
+    "tasks": ["defensive_move"]
+  }
+}

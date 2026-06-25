@@ -1,0 +1,14 @@
+{
+  "recognized_text": "画面閉じて",
+  "state": {
+    "inventory": {},
+    "nearby": {
+      "minecraft:oak_door": true
+    }
+  },
+  "expected": {
+    "route": "close_screen_route",
+    "tasks": ["close_screen"],
+    "actions": [{ "type": "close_screen" }]
+  }
+}

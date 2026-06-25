@@ -1,0 +1,24 @@
+{
+  "recognized_text": "石の壁を作って",
+  "state": {
+    "inventory": {
+      "minecraft:cobblestone": 6,
+      "minecraft:crafting_table": 1
+    },
+    "nearby": {}
+  },
+  "expected": {
+    "route": "craft_item_route",
+    "tasks": [
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_recipe"
+    ],
+    "actions": [
+      {
+        "type": "craft",
+        "recipe": "minecraft:cobblestone_wall"
+      }
+    ]
+  }
+}

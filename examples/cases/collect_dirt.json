@@ -1,0 +1,16 @@
+{
+  "recognized_text": "土を掘りたい",
+  "state": {
+    "inventory": {},
+    "nearby": {
+      "minecraft:dirt": true,
+      "minecraft:grass_block": true
+    },
+    "light_level": 12
+  },
+  "expected": {
+    "goal": "collect_block",
+    "route": "collect_block_route",
+    "tasks": ["collect_requested_block", "pickup_items"]
+  }
+}

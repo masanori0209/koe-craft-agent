@@ -1,0 +1,12 @@
+{
+  "id": "escape_blocked_lava_room",
+  "action": "escape_fluid",
+  "radius": 5,
+  "grid": [
+    "#########",
+    "#LLLLLLL#",
+    "#LLLPLLL#",
+    "#LLLLLLL#",
+    "#########"
+  ]
+}

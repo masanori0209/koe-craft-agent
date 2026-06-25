@@ -1,0 +1,12 @@
+{
+  "recognized_text": "村を探したい",
+  "state": {
+    "inventory": {},
+    "nearby": {}
+  },
+  "expected": {
+    "route": "explore_route",
+    "tasks": ["explore"],
+    "actions": [{ "type": "explore" }]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "recognized_text": "石のツルハシ作って",
+  "state": {
+    "inventory": {
+      "minecraft:oak_log": 0,
+      "minecraft:stick": 0,
+      "minecraft:cobblestone": 0
+    },
+    "nearby": {
+      "minecraft:oak_log": true,
+      "minecraft:stone": true
+    }
+  },
+  "expected": {
+    "goal": "craft_stone_pickaxe",
+    "route": "stone_pickaxe_route",
+    "tasks": [
+      "collect_log",
+      "pickup_items",
+      "craft_planks",
+      "craft_sticks",
+      "craft_crafting_table",
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_wooden_pickaxe",
+      "close_screen",
+      "check_tool_durability",
+      "collect_cobblestone",
+      "pickup_items",
+      "ensure_crafting_table_hotbar",
+      "open_crafting_table",
+      "craft_stone_pickaxe"
+    ]
+  }
+}

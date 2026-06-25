@@ -1,0 +1,33 @@
+---
+description: KoeCraft Agent project rules
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# KoeCraft Agent Rules
+
+You are working on KoeCraft Agent.
+
+Before implementation, inspect:
+- `docs/spec.md`
+- `docs/architecture.md`
+- `docs/harness.md`
+- `docs/loop-engineering.md`
+
+Never generate or execute Minecraft world-editing commands such as `/give`, `/fill`, `/setblock`, `/tp`, `/summon`, `/kill`.
+
+The project must use Action DSL and Safety Filter before any Minecraft-side execution.
+
+Keep the LLM role narrow:
+- LLM may parse user intent.
+- LLM may explain choices.
+- LLM must not directly solve recipes from memory.
+- LLM must not directly produce executable Minecraft commands.
+
+Use fixtures for behavior changes.
+
+After changes, run the relevant harness command:
+```bash
+make agent-check
+```

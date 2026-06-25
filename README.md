@@ -20,6 +20,22 @@ Minecraft Java Edition
 
 The previous TypeScript Voice Agent has been removed from the standard runtime and harness. Do not start a separate `voice:daemon` or browser voice UI for normal play.
 
+## Verified Environment
+
+The current implementation has only been tested end-to-end on the developer's Mac.
+
+Verified local environment:
+
+- macOS 26.5 arm64
+- Java 21.0.11, Homebrew OpenJDK
+- Minecraft Java Edition 1.21.4
+- Fabric Loader 0.16.10
+- Fabric API 0.114.2+1.21.4
+
+Windows and Linux are intended targets, and the repository includes Gradle Wrapper based build paths for them, but real Minecraft gameplay, microphone permission behavior, and voice-control execution have not yet been verified on those OSes.
+
+日本語メモ: 現時点で実際に Minecraft を起動して音声操作まで確認できているのは、この開発PCのMac環境のみです。Windows / Linux はビルド手順を用意していますが、実機プレイ確認は未完了です。
+
 ## Setup
 
 Build the MOD:
